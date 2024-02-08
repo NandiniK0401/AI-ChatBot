@@ -16,30 +16,17 @@ app.get("/", async (req, res) => {
     });
 });
 
-// const configuration = new Configuration({
-//     apiKey: process.env.OPENAI_API_KEY,
-// });
-// const openai = new OpenAIApi(configuration);
+
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
   });
 
-//   const openai = new OpenAI({
-//     apiKey: "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"
-//   });
+
 
 app.post("/", async (req, res) => {
     try {
-        // const response = await openai.chat.completions.create({
-        //     model: "text-davinci-003",
-        //     prompt: req.body.input,
-        //     temperature: 0,
-        //     max_tokens: 4000,
-        //     top_p: 1,
-        //     frequency_penalty: 0.5,
-        //     presence_penalty: 0,
-        // });
+    
 
             console.log("req", req.body);
      
